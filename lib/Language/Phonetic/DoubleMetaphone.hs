@@ -51,8 +51,8 @@ doubleMetaphone
     :: ByteString
     -- ^ The input string, should be Latin-1 or Char7 encoded.
     -> (ByteString, ByteString)
-doubleMetaphone = doubleMetaphoneBounded maxBound
-
+doubleMetaphone = doubleMetaphoneBounded cIntMaxBound
+  where cIntMaxBound = fromIntegral (maxBound :: CInt)
 foreign import ccall unsafe "double-metaphones.h DoubleMetaphone"
     c_double_metaphone
         :: CString
