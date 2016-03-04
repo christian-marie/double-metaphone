@@ -1,5 +1,5 @@
 name:           double-metaphone
-version:        0.0.1
+version:        0.0.2
 license:        GPL
 license-file:   LICENSE
 homepage:       https://github.com/christian-marie/double-metaphone
@@ -13,7 +13,7 @@ synopsis:       Haskell bindings to a C double-metaphone implementation.
 cabal-version:  >= 1.8
 build-type:     Simple
 description:
-	
+
 	Compute two metaphones of a latin1 encoded bytestring, based on Perl's text-DoubleMetaphone
 
 extra-source-files:
